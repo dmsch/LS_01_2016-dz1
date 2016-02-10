@@ -62,32 +62,28 @@ ul.works-info {
 }
 
 .mask {
-	position: relative;
-	margin-top: -120px;
-	height: 100%;
-	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 160px;
+	height: 120px;
+	
 	/*background-color: rgba(0,69,135,0.8);*/
 	background-color: rgba(0,0,0,0.75);
 	opacity: 0;
 }
 
-.mask-text-1 {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	margin: auto;
-	/*width: 160px;
-	height: 50px;
-	padding: 3px;*/
-	text-align: center;
-	color: white;
-	/*border: 1px white solid;*/
-	/*border-radius: 7px;*/
+.work-img-wrapper {
+	width: 160px;
+	height: 120px;
+}
+
+.mask:hover {
+	opacity: 1;
 }
 
 .mask-link {
+	display: block;
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -105,11 +101,11 @@ ul.works-info {
 	word-break: break-all;
 }
 
-.mask:hover {
-	opacity: 1;
+.no-opacity .mask-link:hover {
+	background-image: url(../img/mask.png);
 }
 
-.nf {
+.work-img {
     width: 160px;
     height: 120px; 
 	position: relative;
@@ -123,10 +119,6 @@ ul.works-info {
 .dz1 {
     width: 160px;
     height: 120px; 
-}
-
-.work-img:hover-1 {
-	opacity: 0.5;
 }
 
 .work-img a {
@@ -193,7 +185,6 @@ ul.works-info {
 	list-style: none;
 	display: inline-block;
 	margin: 0 22px 30px 11px;
-	width: 160px;
 	border: 2px #c5c5c5 solid;
 	border-radius: 6px;
 	overflow: hidden;
@@ -255,6 +246,7 @@ ul.works-info {
 	background-image: -moz-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
 	background-image: -webkit-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
 	background-image: -ms-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
+	
 	box-shadow: inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
 
 }
